@@ -11,6 +11,10 @@
     } 
   ],
   "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gflarity/nervous_plugin_memcached.git"
+  },
   "keywords": [
     "nervous", 
     "monitoring",
