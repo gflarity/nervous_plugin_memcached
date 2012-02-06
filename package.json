@@ -20,8 +20,8 @@
     "monitoring",
     "plugable",
     "plugin",
-    "memcached',
-    'memcache'
+    "memcached",
+    "memcache"
   ],
   "dependencies" : {
   },
