@@ -63,13 +63,15 @@ module.exports = function( axon ) {
                 
                 
                 axon.emit('data', name, value, timestamp);
-            }
-            //TODO reset and then close the client, the client doesn't support
-            //reset, need to patch it first            
-            /*client.stats('reset', function(err) {
-                console.log(err);
+            }  
+            
+            //reset the stats for next time
+            client.stats('reset', function(err) {
+
+                if ( err ) { axon.emit( 'error', err ) }
+                
                 client.close();
-            });*/
+            });
         });
 
 	};
